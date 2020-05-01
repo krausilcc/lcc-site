@@ -3,28 +3,60 @@
 
 <head>
     <title>images demo page</title>
-    
-    <style>
 
+    <style>
+        body {
+            background-image: url(images/BG.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+
+        img {
+            margin: 60px
+        }
+
+        #one {
+            border-radius: 50px 150px;
+            box-shadow: 20px 10px 30px;
+            border: 3px solid black;
+        }
+
+        #two {
+            background-color: blanchedalmond;
+            width: 200px;
+            height: 200px;
+        }
+        #three {
+            border-radius: 50%;
+            filter: grayscale();
+            filter: saturate();
+        }
     </style>
 </head>
 
 <body>
-    <h1>web demo for using images in web pages</h1> 
+    <h1>web demo for using images in web pages</h1>
 
-    <p>a demo for adding images in html and manipulating them with css. there will be three versions of the same image tweaked in different ways. there will also be either a tiled background image or a background gradient.</p>
+    <p>a demo for adding images in html and manipulating them with css. there will be three versions of the same image
+        tweaked in different ways. there will also be either a tiled background image or a background gradient.</p>
 
     <!-- basic image tag including where to find the file and alternative text -->
-    <img src="images/mood.jpg" alt="girl with silly face">
+    <img src="images/mood.jpg" alt="girl with silly face" id="one">
 
-    <img src="images/mood.jpg" alt="girl with silly face">
+    <div id="two">
+        <p>CONTENT</p>
+
+        <img src="images/mood.jpg" alt="girl with silly face">
+
+    </div>
 
     <!-- addition of a figure tag that adds caption. preferred method for accessibility. slightly different default formatting -->
     <figure>
-        <img src="images/mood.jpg" alt="girl with silly face">
+        <img src="images/mood.jpg" alt="girl with silly face" id="three">
         <figcaption>girl with silly face</figcaption>
-      </figure>
-    
+    </figure>
+
 
 </body>
 
