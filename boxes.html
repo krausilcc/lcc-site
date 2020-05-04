@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>boxes demo page</title>
+
+    <style>
+        /* the following is the box-sizing reset */
+
+        /* 
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+    */
+
+        /* now back to regular styling */
+        body {
+            color: #14080E;
+            background-color: #E8E5E7;
+        }
+
+        header {}
+
+        main {}
+
+        #one {
+            background-color: #E9EB9E;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #two {
+            background-color: #ACC196;
+            border: 10px solid blue;
+            margin: 20px;
+            margin-left: auto; margin-right: auto;
+            height: 100px;
+            width: 120px;
+            border-radius: 30%;
+            text-align: center;
+        }
+
+        #three {
+            background-color: #799496;
+            border: 5px solid black;
+            padding: 10px;
+            margin: 25px;
+            margin-left: auto; margin-right: auto;
+            font-size: 35px;
+            width: 80%;
+            text-align: center;
+        }
+
+        #four {
+            background-color: #49475B;
+            width: 100px;
+            height: 100px;
+            padding: 100px;
+            margin: 30px;
+            margin-right: auto; margin-left: auto;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>web demo for exploring the box model in web pages</h1>
+    </header>
+
+    <main>
+        <!-- a box is called a div in html -->
+
+        <div id="one">
+            <p>content goes here.</p>
+        </div>
+
+        <div id="two">
+            <p>Border Box</p>
+        </div>
+
+        <!-- this div has another div inside it -->
+        <div id="three">
+            <div id="four">
+                <img src="images/carimage.jpeg" alt="Mane">
+                <p>inside box</p>
+            </div>
+            <p>content goes here.</p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
